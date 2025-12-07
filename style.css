@@ -392,25 +392,21 @@ ul {
 }
 
 /* ========== Features Bar ========== */
-.features-bar {
-    display: grid !important;
-    grid-template-columns: repeat(3, 1fr) !important;
-    background: var(--bg-secondary);
-    border-top: 1px solid rgba(212, 175, 55, 0.2);
-    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
-    place-items: center;   /* centers horizontally + vertically */
-}
+.features-bar { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); background: var(--bg-secondary); 
+    border-top: 1px solid rgba(212, 175, 55, 0.2); 
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2); 
+    align-items: center; }
 
-.feature-item {
-    display: flex;
-    flex-direction: row;      /* keep icon + text in a row (default) */
-    align-items: center;      /* vertically center the row contents */
-    justify-content: center;  /* horizontally center the row contents */
-    gap: 15px;
-    padding: 30px 20px;
-    text-align: center;       /* center text inside the text block */
-    transition: var(--transition);
-}
+.feature-item { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 15px; 
+    padding: 30px 20px; 
+    border-right: 1px solid rgba(255, 255, 255, 0.05); 
+    transition: var(--transition); }
 
 .feature-item:last-child {
     border-right: none;
@@ -1487,4 +1483,5 @@ ul {
 ::selection {
     background: var(--gold-primary);
     color: var(--bg-primary);
+
 }
